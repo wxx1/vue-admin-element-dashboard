@@ -1,29 +1,29 @@
 # vue-admin-element-dashboard
 
-## Project setup
+基于之前做的一个项目，进行简单总结，做的一套前端解决方案
+
+### 下载项目之后，首先安装依赖包
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### 启动项目
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### 打包项目
 ```
 npm run build
 ```
 
-### Run your tests
-```
-npm run test
-```
+持续更新中，现在只完成了
+- table表格的封装
+- tabs的封装
+- 用户信息登记
+- 用户信息
+- 使用mock模拟数据
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+待完成：
+- 周课表
+- 月课表
