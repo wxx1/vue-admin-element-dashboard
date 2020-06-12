@@ -32,3 +32,5 @@ npm run build
 
 ## 参考资料
 mock http://mockjs.com/0.1/#Mock
+
+FullCalendar https://fullcalendar.io/docs
