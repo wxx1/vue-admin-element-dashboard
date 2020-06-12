@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-
+import {getTimeTableEvents} from '@/api/request'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
@@ -13,7 +13,16 @@ export default new Vuex.Store({
     }
   },
   actions: {
+    getTimeTable(){
+      getTimeTableEvents().then(res => {
+        console.log(res)
+        res.map(item => {
+          item.start = `${item.year}T${item.start}`;
+        })
+      })
+    }
   },
   modules: {
   }
 })
+

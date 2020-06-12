@@ -23,7 +23,12 @@ npm run build
 - 用户信息登记
 - 用户信息
 - 使用mock模拟数据
+- 使用FullCalendar实现课表功能
 
 待完成：
-- 周课表
-- 月课表
+
+
+
+
+## 参考资料
+mock http://mockjs.com/0.1/#Mock

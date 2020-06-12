@@ -75,12 +75,8 @@ export default {
           title: "课表",
           subs: [
             {
-              index: "entrystuinfo",
-              title: "周课表"
-            },
-            {
-              index: "students",
-              title: "月课表"
+              index: "timeTable",
+              title: "课表"
             },
             {
               index: "electivecourse",

@@ -5,6 +5,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import { Form } from 'element-ui'
+import { getTimeTableEvents } from '../api/request'
 
 
 Vue.use(VueRouter)
@@ -20,7 +21,7 @@ const Table = () => import(/* webpackChunkName: "table" */ '@/views/Table/Index'
 const userForm = () => import(/* webpackChunkName: "form" */ '@/views/Form/Index')
 
 const affiliate = () => import(/* webpackChunkName: "affiliate" */ '@/views/Staff/Affiliate/Index')
-
+const timeTable = () => import(/* webpackChunkName: "timeTable" */ '@/views/TimeTable/TimeTable')
 
 
   const routes = [
@@ -47,6 +48,12 @@ const affiliate = () => import(/* webpackChunkName: "affiliate" */ '@/views/Staf
         name: 'affiliate',
         component: affiliate,
         meta: {title: '挂靠请求'}
+      },
+      {
+        path: 'timeTable',
+        name: 'timeTable',
+        component: timeTable,
+        meta: {title: "课表"}
       }
     ]
   },

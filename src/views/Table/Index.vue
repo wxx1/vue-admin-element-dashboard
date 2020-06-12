@@ -20,7 +20,7 @@
 <script>
 import lTable from "components/Table/Table.vue";
 import lDialog from "components/Dialog/Index.vue";
-import { getUserList } from "@/api/table";
+import { getUserList } from "@/api/request";
 
 export default {
   components: {
