@@ -87,6 +87,11 @@ export default {
               title: "预约试听管理"
             }
           ]
+        },
+        {
+          icon: 'el-icon-postcard',
+          index: 'openlayers',
+          title: 'OpenLayers'
         }
       ]
     };

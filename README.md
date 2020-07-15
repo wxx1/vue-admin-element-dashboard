@@ -24,6 +24,7 @@ npm run build
 - 用户信息
 - 使用mock模拟数据
 - 使用FullCalendar实现课表功能
+- 使用openlayers实现简单地图加载
 
 待完成：
 
@@ -34,3 +35,5 @@ npm run build
 mock http://mockjs.com/0.1/#Mock
 
 FullCalendar https://fullcalendar.io/docs
+
+openlayers https://openlayers.org/

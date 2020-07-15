@@ -8,6 +8,7 @@ import { Form } from 'element-ui'
 import { getTimeTableEvents } from '../api/request'
 
 
+
 Vue.use(VueRouter)
 //在打包过程中每一个组件都会打包成一个js文件，如果不使用使用/* webpackChunkName: "home" */
 //在打包的时候就会生成0.js,1.js等等，使用了之后就会打包成home.js
@@ -22,7 +23,7 @@ const userForm = () => import(/* webpackChunkName: "form" */ '@/views/Form/Index
 
 const affiliate = () => import(/* webpackChunkName: "affiliate" */ '@/views/Staff/Affiliate/Index')
 const timeTable = () => import(/* webpackChunkName: "timeTable" */ '@/views/TimeTable/TimeTable')
-
+const mapView = () => import(/* webpackChunkName: 'map' */ '@/views/Map/Index')
 
   const routes = [
   {
@@ -54,6 +55,12 @@ const timeTable = () => import(/* webpackChunkName: "timeTable" */ '@/views/Time
         name: 'timeTable',
         component: timeTable,
         meta: {title: "课表"}
+      },
+      {
+        path: 'openlayers',
+        name: 'openlayers',
+        component: mapView,
+        meta: {title: '地图'}
       }
     ]
   },
